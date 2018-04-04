@@ -7,7 +7,7 @@
 
 #include "printf.h"
 
-static char digits[] = "0123456789abcdef";
+static const char digits[] = "0123456789abcdef";
 
 void my_itoa(int n, int base)
 {
