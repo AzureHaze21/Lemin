@@ -47,12 +47,12 @@ PARSE_CMD parse_cmd(char *s)
 				s++;
 		if (*s && *s == '#' && *(s + 1) == '#')
 		{
-				if (!strcmp(s, "##start"))
+				if (!my_strcmp(s, "##start"))
 				{
 						my_printf("##start\n");
 						return (CMD_ENTRY);
 				}
-				if (!strcmp(s, "##end"))
+				if (!my_strcmp(s, "##end"))
 				{
 						my_printf("##end\n");
 						return (CMD_EXIT);
