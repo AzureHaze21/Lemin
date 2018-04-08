@@ -24,7 +24,7 @@ SRCS	= ./src/get_next_line.c \
 OBJS	= $(SRCS:.c=.o)
 
 CFLAGS = -I ./inc/
-CFLAGS += -W -Wall -Wextra
+CFLAGS += -W -Wall -Wextra -nostdlib
 
 all: $(NAME)
 
