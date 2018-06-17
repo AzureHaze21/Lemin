@@ -20,12 +20,12 @@ float my_sqrt(float n)
 
 float my_pow(float f, int n)
 {
-		f =  (f < 0.f) ? -f : f;
-		if (!n)
-				return (1);
-		for (; n > 1; n--)
-				f *= f;
-		return (f);
+	float sign = (f < 0 && n % 2) ? -1.f : 1.f;
+
+	while (--n > 0)
+		f *= f;
+	
+	return (f * sign);
 }
 
 int get_dist(const t_vertex *v1, const t_vertex *v2)
