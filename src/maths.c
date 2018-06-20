@@ -22,7 +22,7 @@ float my_pow(float f, int n)
 {
 	float sign = (f < 0 && n % 2) ? -1.f : 1.f;
 
-	while (--n > 0)
+	while (--n > 1)
 		f *= f;
 	
 	return (f * sign);
